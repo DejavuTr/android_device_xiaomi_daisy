@@ -19,7 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=true \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
+    persist.camera.HAL3.enabled=1 \
+    persist.camera.stats.test=5 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.stats.test=5 \
     persist.vendor.camera.perfcapture=1
 
 # CNE and DPM
